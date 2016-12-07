@@ -18,32 +18,33 @@
 
 <header>
     <h1 id="nameheader"><a href="index.html">TRODRIGUEZ</a></h1>
+    <!--<h2 id="namesubheader">-->
+    <!--&lt;!&ndash;My logo and name suggest short and sweet. My work suggests mighty and thorough.(not sure about this pitch) &ndash;&gt;-->
+    <!--</h2>-->
 <nav>
-    <a href= "about.html" >About Me</a>
-    <a href= "WorkingOn.html">What I Am Working On</a>
+    <a id="aboutmea" href= "about.html">About Me</a>
+    <a id="workingona" href= "WorkingOn.html">What I Am Working On</a>
     <!-- <a href= "interestinglinks.html" >My Interests</a> -->
 </nav>
 </header>
 
-<div id="aboutme-container">
+<div id="workingonmaincontent" class="maincontent">
 
-    <p>I am a Chicago native who has always found inspiration in my surrounding urban landscape. My mind is often impressed with the rich, diverse sounds, colors, textures and people of the city. Additionally, the juxtaposition of elements that are rough and smooth, soft and hard, old and new in the city...and, how they each co-exist beautifully and in an interesting manner keeps me inspired.</p> 
-
-   
-    <img class="mySlides" src="styles/images/pandamural.jpg">
-    <img class="mySlides" src="styles/images/ferrisride-view.jpg">
-    <img class="mySlides" src="styles/images/lake-rainbow.jpg">
-    <img class="mySlides" src="styles/images/mural-logansquare.jpg">
-    <img class="mySlides" src="styles/images/IMG_3949.JPG">
-    <img class="mySlides" src="styles/images/chicagoriver.jpg">
-
-    <a class="floating-button left" onclick="plusDivs(-1)">&#10094;</a>
-    <a class="floating-button right" onclick="plusDivs(+1)">&#10095;</a>
-  
+  <section class="working-on">
+      <img class="siterecreation" src="styles/images/rings.jpg">
+      <div>A css recreation of the Olympic rings</div>    
+  </section>
 
 
+  <section id="watch-recreation" class="working-on">
+      <img class="siterecreation" src="styles/images/watchsite.jpg">
+      <div id="recreated-site-title" >A Website Recreation</div>    
+      <img id="actual-site-img" class="siterecreation" src="styles/images/IWCsite.jpg">
+      <div id="actual-site-title" >Actual Site:IWC.com</div>
+  </section>
 </div>
-	<footer id="about-footer">
+
+<footer>
 <!-- <div class="fb-follow" data-href="https://www.facebook.com/tina.rodriguez.3152" data-layout="standard" data-size="small" data-show-faces="true"></div> -->
 <!-- <a id="footer" href="mailto:apr_dec@hotmail.com">Email</a> -->
 
@@ -57,25 +58,8 @@
 <a class="soc-med-anchors" href="https://www.linkedin.com/pub/tina-rodriguez/5a/797/875"><img src="styles/images/linkedin.png" alt="linkedin logo"></a>
 
 <span>&copy;2016 TRodriguez </span> </footer>
-
-<script type="text/javascript">
-    var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-    showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    if (n > x.length) {slideIndex = 1} 
-    if (n < 1) {slideIndex = x.length} ;
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none"; 
-    }
-    x[slideIndex-1].style.display = "block"; 
-}
-</script>
+<!-- <script src="scripts/app.js"></script> -->
 </body>
+
+
 </html>

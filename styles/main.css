@@ -1,22 +1,28 @@
 body {
-    width: 100%;
+    /*width: 100%;*/
     margin: 0;
     /*height: auto;*/
     /*position: fixed;*/
+    background: url(images/Old-Metal-Textured-Background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
-html {
+/*html {
     background: url(images/Old-Metal-Textured-Background.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
      /*position: fixed;*/
-}
+/*}*/
 
 
 header {
     height: 13rem;
+    width: 90rem;
   /*  position: fixed;nope*/
 }
 
@@ -106,6 +112,8 @@ ________________________________________________________________
 .back { 
     transform: rotateY(180deg); 
 } 
+
+    /*END OF FLIPPING CODE*/
 /*__________________________________________________*/
 
 
@@ -113,7 +121,7 @@ div.maincontent {
     height:26rem;
     margin-top: 2rem;
     /*position:fixed;nope messed up footer*/
-    display: -webkit-inline-box;
+    display: inline-flex;
     padding-left: .75rem;
 }
 
@@ -125,7 +133,7 @@ a {
     /*padding-top: 10px;*/
     text-decoration: none;
     font-family: 'Poiret One', cursive, sans-serif;
-    width: 10rem;
+    width: 15rem;
     letter-spacing: .2rem;
     /*float: right;*/
     /*position:fixed;messed up the links*/
@@ -216,6 +224,9 @@ span{
 
 
 
+
+
+
 /*ABOUT ME PAGE
 _____________________________________________________________________________________*/
 
@@ -230,10 +241,10 @@ div#aboutme-container {
     margin-right: 1.5rem;
     padding-left: 1.25rem;
     padding-right: 1.5rem;
-    
-}
+    padding-bottom: 1rem;
+    }
 
-p{
+p {
     color: white;
     width: 43rem;
     font-size: xx-large;
@@ -241,12 +252,190 @@ p{
     margin-left: 5rem;
     padding-top: 1rem;
     margin-right: 0rem;
-    display: inline-flex;  
+    display: inline;  
 }
 
 div#slide-container {
      /*   display: inline;
     width: 40rem;*/
+}
+
+.mySlides {
+    /*float: right;
+    border-radius: 40px;*/
+
+}
+
+img.mySlides {
+    width: 320px;
+    height: 427px;
+    /*display: block;*/
+    margin-left: 10rem;
+    margin-top: 3rem;
+    margin-right: -10.5rem;
+    float: right;
+    border-radius: 40px;
+}
+
+a.floating-button.left {
+    height: 1rem;
+    margin-top: 30rem;
+    margin-left: -14rem;
+    font-size: 2rem;
+}
+
+a.floating-button.right {
+    height: 1rem;
+    margin-top: 30rem;
+   /* margin-left: 6rem;*/
+    font-size: 2rem;
+}
+
+#about-footer {
+    margin-top: 7rem;
+}
+
+
+
+
+
+
+
+
+/*WHAT I AM WORKING ON PAGE
+________________________________________________________________________*/
+
+.working-on {
+    text-align: center;
+    margin-top: 2rem;
+    color:white;
+    font-family: 'Poiret One', cursive, sans-serif;
+}
+
+div#workingonmaincontent.maincontent {
+    display: inline;
+}
+
+.siterecreation {
+    height: 340px;
+    width: 600px;
+}
+
+section#watch-recreation.working-on {
+    display: inline-flex;
+    margin-left: 5rem;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+div#recreated-site-title {
+    margin-top: 22rem;
+    margin-left: -23rem;
+}
+
+
+img#actual-site-img.siterecreation {
+    margin-left: 20rem;
+}
+
+div#actual-site-title {
+    margin-top: 22rem;
+    margin-left: -23rem;
+}
+/*MEDIA QUERY FOR PHONE*/
+/*______________________________________________________________________*/
+/*indexpage*/
+@media (max-width: 480px) { 
+
+    html {
+    width: 100%;
+    position: ;
+    }
+    body {
+        width:100%;
+      /*  position: fixed;
+        height: auto;*/
+    }
+
+    header {
+        width:48rem;
+        /*position: fixed;*/
+    }
+
+    h1#nameheader {
+        width: 48rem;
+        font-size: 5.75rem;
+        padding-left: .75rem;
+    }
+
+    nav {
+        width: 29.8rem;
+    }
+
+    a {
+        margin-right: 1rem;
+    }
+
+    #aboutmea {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    #workingona {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    div.maincontent {
+        display: inline;
+    }
+
+    div.flip-container {
+    padding-left: 4rem;
+    }
+
+     footer {
+        width: 48rem;
+     }
+
+
+     span {
+        float: left;
+        margin-left: 9rem;
+     }
+
+
+/*ABOUT ME PAGE*/
+
+div#aboutme-container {
+    background: rgba(255,255, 255, 0.2);
+    width: 80%;
+    display: inline-block;
+    border-radius: 15px;
+    margin-top: 3rem;
+    margin-bottom: -3rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    padding-left: 1.25rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+p{
+    color: white;
+    width:158rem;
+    font-size: 1.5rem;
+    letter-spacing: .25rem;
+    /*margin-left: 5rem;*/
+   /* padding-top: 1rem;*/
+    /*margin-right: 0rem;*/
+    display: inline;  
+}
+
+div#slide-container {
+        display: inline;
+    width: 40rem;
 }
 
 .mySlides {
@@ -258,75 +447,170 @@ div#slide-container {
 img.mySlides {
     width: 320px;
     height: 427px;
-    display: block;
-    margin-left: 10rem;
-        margin-top: 5rem;
-    margin-right: -12rem;
+    /*display: block;
+   /* margin-left: 10rem;*/
+    margin-top: 2rem;
+    margin-right: 2.5rem;
 }
 
 a.floating-button.left {
     height: 1rem;
-    margin-top: 32rem;
-    margin-left: -11rem;
+    margin-top: 0rem;
+    margin-left: -3rem;
     font-size: 2rem;
+    float:left;
+
 }
 
 a.floating-button.right {
     height: 1rem;
-    margin-top: 32rem;
-    margin-left: 6rem;
+    margin-top: -1.5rem;
+    margin-left: 10rem;
     font-size: 2rem;
+    float: left;
 }
 
 #about-footer {
     margin-top: 7rem;
 }
 
-/*MEDIA QUERY FOR PHONE*/
-/*______________________________________________________________________*/
 
-@media (max-width: 480px) { 
 
-header {
-    width:48rem;
+/*WHAT IM WORKING ON
+____________________________________________________________*/
+
+.working-on {
+    text-align: center;
+    margin-top: 2rem;
+    color:white;
+    font-family: 'Poiret One', cursive, sans-serif;
 }
 
-h1#nameheader {
-    width: 30rem;
-    font-size: 5.75rem;
-    padding-left: .75rem;
-}
-nav {
-    width:30.8rem;
+.siterecreation {
+    height: 240px;
+    width: 451px;
 }
 
-div.maincontent {
-display: inline;
-}
-
-div.flip-container {
-padding-left: 4rem;
-}
- footer {
-    width: 48rem;
- }
-
- #socialmedia {
-
- }
-
- span {
-    float: left;
-    margin-left: 12rem;
- }
 }
 
 
 
+/*@media (min-width: 720px) { */
+
+/*header {
+        width:46rem;
+    }
+
+    nav {
+        width:48rem;
+    }
+
+    a {
+        width: 11rem;
+        margin-right: 1rem;
+    }
+
+    div.flip-container {
+        padding-left: 12rem;
+    }
+
+     footer {
+        width: 48rem;
+     }
+
+     span {
+        float: left;
+        margin-left: 24rem;
+     }*/
+
+
+/*aboutme page*/
+/*
+div#aboutme-container {
+        background: rgba(255,255, 255, 0.2);
+        width: 86%;
+        display: inline-block;
+        border-radius: 15px;
+        margin-top: 3rem;
+        margin-bottom: -3rem;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        padding-left: 1.25rem;
+        padding-right: 1.5rem;
+        padding-bottom: 2rem;
+        padding-top: 1rem;
+    }*/
+    
+   /* p{
+        color: white;
+        width:158rem;
+        font-size: 1.5rem;
+        letter-spacing: .25rem;
+        margin-left: 5rem;
+        padding-top: 1rem;
+        margin-right: 0rem;
+        display: inline;  
+    }
+
+    div#slide-container {
+        display: inline;
+        width: 40rem;
+   }
+
+    .mySlides {
+        float: right;
+        border-radius: 40px;
+
+    }*/
+
+/*    img.mySlides {
+        width: 320px;
+        height: 427px;
+        margin-top: 3rem;
+        margin-right: 9.5rem;
+    }
+
+    a.floating-button.left {
+        height: 0rem;
+        margin-top: 0rem;
+        margin-left: 7rem;
+        font-size: 2rem;
+        float:left;
+
+    }
+
+    a.floating-button.right {
+        height: 1rem;
+        margin-top: -0.5rem;
+        margin-left: 10rem;
+        font-size: 2rem;
+        float: right;
+        margin-right: 7rem;
+    }
+
+    #about-footer {
+        margin-top: 7rem;
+    }*/
 
 
 
+/*WHAT IM WORKING ON
+____________________________________________________________*/
 
+/*    .working-on {
+        text-align: center;
+        margin-top: 2rem;
+        color:white;
+        font-family: 'Poiret One', cursive, sans-serif;
+    }
+
+    .siterecreation {
+        height: 240px;
+        width: 451px;
+    }
+
+
+}*/
 
 
 
